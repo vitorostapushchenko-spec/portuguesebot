@@ -1,0 +1,32 @@
+# Production image: the code and its dependencies are inside, nothing is mounted from the host.
+# docker/Dockerfile (the development image) is left alone; this one is built by deploy/deploy.sh.
+FROM php:8.4-cli
+
+# gd + freetype + the DejaVu font draw the level bar (App\Services\LevelBarImage).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libpq-dev \
+        libpng-dev \
+        libjpeg62-turbo-dev \
+        libfreetype6-dev \
+        fonts-dejavu-core \
+        unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo_pgsql gd \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+ENV COMPOSER_ALLOW_SUPERUSER=1
+
+WORKDIR /app
+
+# Dependencies first, so a code-only change does not reinstall them.
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --no-interaction --no-progress --no-scripts --prefer-dist
+
+COPY . .
+RUN composer dump-autoload --no-dev --optimize --no-interaction \
+    && rm /usr/bin/composer \
+    && mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
+    && chown -R www-data:www-data storage bootstrap/cache
+
+USER www-data

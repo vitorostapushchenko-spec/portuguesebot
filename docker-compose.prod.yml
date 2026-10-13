@@ -1,0 +1,65 @@
+# The server's compose file. deploy/deploy.sh uploads it as docker-compose.yml next to a .env that
+# holds the real settings (see .env.example), so on the server it is just `docker compose up -d`.
+# The image is built on the development machine and loaded on the server, never built there.
+#
+# The server is small (1 GB of memory, shared with lunchbot), so every service has a memory cap:
+# a runaway here must not take lunchbot down with it.
+
+x-app: &app
+  image: portuguesebot-app:prod
+  restart: unless-stopped
+  env_file: .env
+  working_dir: /app
+  depends_on:
+    postgres:
+      condition: service_healthy
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  app:
+    <<: *app
+    container_name: ptbot_app
+    command: sh -c "php artisan migrate --force && php artisan db:seed --class=LessonSeeder --force && php artisan nutgram:run"
+    mem_limit: 256m
+
+  scheduler:
+    <<: *app
+    container_name: ptbot_scheduler
+    command: php artisan schedule:work
+    mem_limit: 256m
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: ptbot_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    command: >
+      postgres
+      -c shared_buffers=32MB
+      -c effective_cache_size=96MB
+      -c work_mem=4MB
+      -c maintenance_work_mem=16MB
+      -c max_connections=20
+    mem_limit: 192m
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME} -d ${DB_DATABASE}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  pgdata:

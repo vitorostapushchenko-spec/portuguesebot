@@ -1,0 +1,61 @@
+[
+  {"order": 1, "category": "Greetings & Farewells", "phrase_pt": "Oi, tudo bem?", "phrase_ru": "Привет, как дела?", "phrase_en": "Hi, how are you?", "pronunciation": "Ой, тýду бейн?", "has_variant": false},
+  {"order": 2, "category": "Greetings & Farewells", "phrase_pt": "Tudo bem, e você?", "phrase_ru": "Всё хорошо, а у тебя?", "phrase_en": "I'm fine, and you?", "pronunciation": "Тýду бейн, и восé?", "has_variant": false},
+  {"order": 3, "category": "Greetings & Farewells", "phrase_pt": "Prazer em conhecer!", "phrase_ru": "Приятно познакомиться!", "phrase_en": "Nice to meet you!", "pronunciation": "Празéр эйн коньесéр!", "has_variant": false},
+  {"order": 4, "category": "Greetings & Farewells", "phrase_pt": "Tudo de bom!", "phrase_ru": "Всего хорошего!", "phrase_en": "All the best!", "pronunciation": "Тýду джи бон!", "has_variant": false},
+  {"order": 5, "category": "Greetings & Farewells", "phrase_pt": "Tchau, até mais!", "phrase_ru": "Пока, до встречи!", "phrase_en": "Bye, see you later!", "pronunciation": "Чáу, атэ́ майс!", "has_variant": false},
+  {"order": 6, "category": "Greetings & Farewells", "phrase_pt": "Até amanhã!", "phrase_ru": "До завтра!", "phrase_en": "See you tomorrow!", "pronunciation": "Атэ́ аманьян!", "has_variant": false},
+  {"order": 7, "category": "Greetings & Farewells", "phrase_pt": "Fica bem!", "phrase_ru": "Береги себя!", "phrase_en": "Take care!", "pronunciation": "Фи́ка бейн!", "has_variant": false},
+  {"order": 8, "category": "Greetings & Farewells", "phrase_pt": "Tenho que ir.", "phrase_ru": "Мне пора идти.", "phrase_en": "I have to go.", "pronunciation": "Тéнью ки ир.", "has_variant": false},
+
+  {"order": 9, "category": "Courtesy & Understanding", "phrase_pt": "Muito obrigado(a) pela ajuda!", "phrase_ru": "Большое спасибо за помощь!", "phrase_en": "Thank you so much for your help!", "pronunciation": "Мýйту обригáду/обригáда пéла ажýда!", "has_variant": true},
+  {"order": 10, "category": "Courtesy & Understanding", "phrase_pt": "Não entendi, desculpa.", "phrase_ru": "Не понял/поняла, извините.", "phrase_en": "Sorry, I didn't understand.", "pronunciation": "Наун энтенджи́, джискýупа.", "has_variant": false},
+  {"order": 11, "category": "Courtesy & Understanding", "phrase_pt": "Pode repetir, por favor?", "phrase_ru": "Можете повторить, пожалуйста?", "phrase_en": "Could you repeat that, please?", "pronunciation": "По́джи хепечи́р, пор фавóр?", "has_variant": false},
+  {"order": 12, "category": "Courtesy & Understanding", "phrase_pt": "Fala mais devagar, por favor.", "phrase_ru": "Говори медленнее, пожалуйста.", "phrase_en": "Please speak more slowly.", "pronunciation": "Фáла майс дживагáр, пор фавóр.", "has_variant": false},
+  {"order": 13, "category": "Courtesy & Understanding", "phrase_pt": "Eu não falo português muito bem.", "phrase_ru": "Я не очень хорошо говорю по-португальски.", "phrase_en": "I don't speak Portuguese very well.", "pronunciation": "Э́у наун фáлу португéйс мýйту бейн.", "has_variant": false},
+  {"order": 14, "category": "Courtesy & Understanding", "phrase_pt": "Como se diz isso em português?", "phrase_ru": "Как это сказать по-португальски?", "phrase_en": "How do you say this in Portuguese?", "pronunciation": "Кóму си джис и́су эйн португéйс?", "has_variant": false},
+
+  {"order": 15, "category": "Help & Emergencies", "phrase_pt": "Preciso de ajuda!", "phrase_ru": "Мне нужна помощь!", "phrase_en": "I need help!", "pronunciation": "Пресизу джи ажýда!", "has_variant": false},
+  {"order": 16, "category": "Help & Emergencies", "phrase_pt": "Pode me ajudar?", "phrase_ru": "Можете мне помочь?", "phrase_en": "Can you help me?", "pronunciation": "Пóджи ми ажудáр?", "has_variant": false},
+  {"order": 17, "category": "Help & Emergencies", "phrase_pt": "Onde fica o hospital mais próximo?", "phrase_ru": "Где ближайшая больница?", "phrase_en": "Where is the nearest hospital?", "pronunciation": "Óнджи фи́ка у оспитáу майс прóсиму?", "has_variant": false},
+  {"order": 18, "category": "Help & Emergencies", "phrase_pt": "O que aconteceu?", "phrase_ru": "Что случилось?", "phrase_en": "What happened?", "pronunciation": "У ки аконтесéу?", "has_variant": false},
+
+  {"order": 19, "category": "Places & Directions", "phrase_pt": "Onde fica o banheiro?", "phrase_ru": "Где здесь туалет?", "phrase_en": "Where is the bathroom?", "pronunciation": "Óнджи фи́ка у баньéйру?", "has_variant": false},
+  {"order": 20, "category": "Places & Directions", "phrase_pt": "Com licença, qual é a senha do Wi-Fi?", "phrase_ru": "Извините, какой пароль от Wi-Fi?", "phrase_en": "Excuse me, what's the Wi-Fi password?", "pronunciation": "Кон лисéнса, куáу э а сéнья ду уайфáй?", "has_variant": false},
+  {"order": 21, "category": "Places & Directions", "phrase_pt": "Como eu chego lá?", "phrase_ru": "Как мне туда добраться?", "phrase_en": "How do I get there?", "pronunciation": "Кóму э́у шéгу лá?", "has_variant": false},
+
+  {"order": 22, "category": "Food & Drink", "phrase_pt": "Estou com fome/sede.", "phrase_ru": "Я хочу есть/пить.", "phrase_en": "I'm hungry/thirsty.", "pronunciation": "Истó кон фóми/сéджи.", "has_variant": true},
+  {"order": 23, "category": "Food & Drink", "phrase_pt": "Uma mesa para dois, por favor.", "phrase_ru": "Столик на двоих, пожалуйста.", "phrase_en": "A table for two, please.", "pronunciation": "Ýма мéза пáра дойс, пор фавóр.", "has_variant": false},
+  {"order": 24, "category": "Food & Drink", "phrase_pt": "O que vamos comer?", "phrase_ru": "Что будем есть?", "phrase_en": "What are we going to eat?", "pronunciation": "У ки вáмус комéр?", "has_variant": false},
+
+  {"order": 25, "category": "Shopping & Money", "phrase_pt": "Quanto custa isso?", "phrase_ru": "Сколько это стоит?", "phrase_en": "How much is this?", "pronunciation": "Куáнту кýста и́су?", "has_variant": false},
+  {"order": 26, "category": "Shopping & Money", "phrase_pt": "Está muito caro!", "phrase_ru": "Это очень дорого!", "phrase_en": "It's very expensive!", "pronunciation": "Истá мýйту кáру!", "has_variant": false},
+  {"order": 27, "category": "Shopping & Money", "phrase_pt": "Vocês têm isso aqui?", "phrase_ru": "У вас есть это?", "phrase_en": "Do you have this here?", "pronunciation": "Восéс тейн и́су аки́?", "has_variant": false},
+  {"order": 28, "category": "Shopping & Money", "phrase_pt": "Onde posso sacar dinheiro?", "phrase_ru": "Где можно снять деньги?", "phrase_en": "Where can I withdraw money?", "pronunciation": "Óнджи пóсу сакáр джиньéйру?", "has_variant": false},
+  {"order": 29, "category": "Shopping & Money", "phrase_pt": "Vou pagar no cartão/dinheiro/Pix.", "phrase_ru": "Я заплачу картой/наличными/через Pix.", "phrase_en": "I'll pay by card/in cash/with Pix.", "pronunciation": "Во пагáр ну картáун/джиньéйру/пикс.", "has_variant": true},
+  {"order": 30, "category": "Shopping & Money", "phrase_pt": "Vocês aceitam cartão/Pix?", "phrase_ru": "Вы принимаете карты/Pix?", "phrase_en": "Do you take cards/Pix?", "pronunciation": "Восéс асéйтаун картáун/пикс.", "has_variant": true},
+
+  {"order": 31, "category": "Time & Weather", "phrase_pt": "Que horas são?", "phrase_ru": "Который час?", "phrase_en": "What time is it?", "pronunciation": "Ки óрас саун?", "has_variant": false},
+  {"order": 32, "category": "Time & Weather", "phrase_pt": "Que dia é hoje?", "phrase_ru": "Какой сегодня день?", "phrase_en": "What day is it today?", "pronunciation": "Ки джи́а э óжи?", "has_variant": false},
+  {"order": 33, "category": "Time & Weather", "phrase_pt": "Está fazendo muito calor!", "phrase_ru": "Очень жарко!", "phrase_en": "It's really hot!", "pronunciation": "Истá фазéнду мýйту калóр!", "has_variant": false},
+  {"order": 34, "category": "Time & Weather", "phrase_pt": "Está fazendo muito frio!", "phrase_ru": "Очень холодно!", "phrase_en": "It's really cold!", "pronunciation": "Истá фазéнду мýйту фри́у!", "has_variant": false},
+
+  {"order": 35, "category": "Plans & Invitations", "phrase_pt": "O que vamos fazer hoje?", "phrase_ru": "Что будем делать сегодня?", "phrase_en": "What are we going to do today?", "pronunciation": "У ки вáмус фазéр óжи?", "has_variant": false},
+  {"order": 36, "category": "Plans & Invitations", "phrase_pt": "Vamos sair?", "phrase_ru": "Пойдём куда-нибудь?", "phrase_en": "Shall we go out?", "pronunciation": "Вáмус саи́р?", "has_variant": false},
+  {"order": 37, "category": "Plans & Invitations", "phrase_pt": "O que você recomenda?", "phrase_ru": "Что ты посоветуешь?", "phrase_en": "What do you recommend?", "pronunciation": "У ки восé хекомéнда?", "has_variant": false},
+  {"order": 38, "category": "Plans & Invitations", "phrase_pt": "Aonde a gente vai?", "phrase_ru": "Куда мы пойдём?", "phrase_en": "Where are we going?", "pronunciation": "Аóнджи а жэ́нчи вай?", "has_variant": false},
+  {"order": 39, "category": "Plans & Invitations", "phrase_pt": "Estou a caminho.", "phrase_ru": "Я уже в пути.", "phrase_en": "I'm on my way.", "pronunciation": "Истó а ками́ньо.", "has_variant": false},
+
+  {"order": 40, "category": "Opinions & Reactions", "phrase_pt": "Eu acho que sim/não.", "phrase_ru": "Думаю, да/нет.", "phrase_en": "I think so / I don't think so.", "pronunciation": "Э́у áшу ки син/наун.", "has_variant": true},
+  {"order": 41, "category": "Opinions & Reactions", "phrase_pt": "Eu concordo.", "phrase_ru": "Я согласен/согласна.", "phrase_en": "I agree.", "pronunciation": "Э́у конкóрду.", "has_variant": false},
+  {"order": 42, "category": "Opinions & Reactions", "phrase_pt": "Isso é uma boa ideia.", "phrase_ru": "Это хорошая идея.", "phrase_en": "That's a good idea.", "pronunciation": "И́су э ýма бóа идéйа.", "has_variant": false},
+  {"order": 43, "category": "Opinions & Reactions", "phrase_pt": "Isso não faz sentido.", "phrase_ru": "В этом нет смысла.", "phrase_en": "That doesn't make sense.", "pronunciation": "И́су наун фáйс сенчи́ду.", "has_variant": false},
+  {"order": 44, "category": "Opinions & Reactions", "phrase_pt": "Tem certeza?", "phrase_ru": "Ты уверен/уверена?", "phrase_en": "Are you sure?", "pronunciation": "Тéйн сертéза?", "has_variant": false},
+  {"order": 45, "category": "Opinions & Reactions", "phrase_pt": "Poxa, que pena.", "phrase_ru": "Эх, как жаль.", "phrase_en": "Aw, what a shame.", "pronunciation": "Пóша, ки пéна.", "has_variant": false},
+
+  {"order": 46, "category": "Feelings & Relationships", "phrase_pt": "Estou cansado(a).", "phrase_ru": "Я устал/устала.", "phrase_en": "I'm tired.", "pronunciation": "Истó кансáду/кансáда.", "has_variant": true},
+  {"order": 47, "category": "Feelings & Relationships", "phrase_pt": "Estou com pressa!", "phrase_ru": "Я спешу!", "phrase_en": "I'm in a hurry!", "pronunciation": "Истó кон прóса!", "has_variant": false},
+  {"order": 48, "category": "Feelings & Relationships", "phrase_pt": "Você consegue!", "phrase_ru": "У тебя получится!", "phrase_en": "You can do it!", "pronunciation": "Восé консэ́ги!", "has_variant": false},
+  {"order": 49, "category": "Feelings & Relationships", "phrase_pt": "Gosto muito de você!", "phrase_ru": "Ты мне очень нравишься!", "phrase_en": "I really like you!", "pronunciation": "Гóсту мýйту джи восé!", "has_variant": false},
+  {"order": 50, "category": "Feelings & Relationships", "phrase_pt": "Amo você!", "phrase_ru": "Я тебя люблю!", "phrase_en": "I love you!", "pronunciation": "Áму восé!", "has_variant": false}
+]

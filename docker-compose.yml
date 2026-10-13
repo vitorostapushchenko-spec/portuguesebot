@@ -1,0 +1,45 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: ptbot_app
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command: sh -c "php artisan migrate --force && php artisan db:seed --class=LessonSeeder --force && php artisan nutgram:run"
+    depends_on:
+      - postgres
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: ptbot_scheduler
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command: php artisan schedule:work
+    depends_on:
+      - postgres
+      - app
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: ptbot_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pt_bot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
