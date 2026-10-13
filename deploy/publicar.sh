@@ -29,5 +29,8 @@ cd "$(dirname "$0")/.."
     sleep 20
     gcloud compute ssh "${VM:-lunch-bot}" --zone "${ZONE:-us-central1-a}" --quiet --command "sudo docker ps --format '{{.Names}}: {{.Status}}' | grep ptbot; sudo docker exec ptbot_app php artisan migrate:status | tail -3"
 
-    echo "== PRONTO. No Telegram, mande para o bot:  /audio 1 =="
+    echo "== Colocando os audios nas licoes (voce vai receber as mensagens de voz no Telegram) =="
+    gcloud compute ssh "${VM:-lunch-bot}" --zone "${ZONE:-us-central1-a}" --quiet --command "sudo docker exec ptbot_app php artisan lessons:import-audio" || echo "AVISO: o envio dos audios falhou; rode de novo para refazer so os que faltam."
+
+    echo "== PRONTO. No Telegram, mande para o bot:  /audio =="
 } 2>&1 | tee deploy/ultimo-deploy.log

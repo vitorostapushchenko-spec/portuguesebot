@@ -65,7 +65,7 @@ class ImportLessonAudio extends Command
 
             try {
                 $message = $bot->sendVoice(
-                    InputFile::make($path),
+                    InputFile::make(fopen($path, 'rb'), basename($path)),
                     chat_id: $teacher,
                     caption: "{$lesson->order}. {$lesson->phrase_pt}",
                 );

@@ -82,7 +82,7 @@ class GenerateLessonAudio extends Command
 
                 if ($upload) {
                     $message = $bot->sendVoice(
-                        InputFile::make($path),
+                        InputFile::make(fopen($path, 'rb'), basename($path)),
                         chat_id: $teacher,
                         caption: "{$lesson->order}. {$lesson->phrase_pt}",
                     );
